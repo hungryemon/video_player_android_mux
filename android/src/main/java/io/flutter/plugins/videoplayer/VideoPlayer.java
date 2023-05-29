@@ -107,8 +107,12 @@ final class VideoPlayer {
 
     CustomerPlayerData customerPlayerData = new CustomerPlayerData();
     customerPlayerData.setPlayerName(data.get("cpd_player_name"));
+    customerPlayerData.setViewerUserId(data.get("cpd_viewer_user_id"));
+    
     CustomerVideoData customerVideoData = new CustomerVideoData();
     customerVideoData.setVideoTitle(data.get("cvd_video_title"));
+    customerVideoData.setVideoId(data.get("cvd_video_id"));
+    
     // CustomData customData = new CustomData();
     // customData.setCustomData1("YOUR_CUSTOM_STRING_HERE");
     CustomerData customerData = new CustomerData(customerPlayerData, customerVideoData, null);
