@@ -1,10 +1,9 @@
-name: video_player_android
-description: Android implementation of the video_player plugin.
-repository: https://github.com/flutter/packages/tree/main/packages/video_player/video_player_android
-issue_tracker: https://github.com/flutter/flutter/issues?q=is%3Aissue+is%3Aopen+label%3A%22p%3A+video_player%22
-version: 2.4.4
+name: video_player_android_mux
+description: Android implementation of the video_player_mux plugin.
+repository: https://github.com/hungryemon/video_player_android_mux
+issue_tracker: https://github.com/hungryemon/video_player_android_mux/issues
+version: 1.0.0
 
-publish_to: 'none'
 
 environment:
   sdk: ">=2.18.0 <4.0.0"
@@ -22,12 +21,14 @@ flutter:
 dependencies:
   flutter:
     sdk: flutter
-  video_player_platform_interface_mux: 
-   git:
-    url: git@github.com:hungryemon/video_player_platform_interface_mux.git
-    ref: 9ea9201517e15a40d23914902c1989f15caaa693
+  video_player_platform_interface_mux: ^1.0.0
+  # video_player_platform_interface_mux: 
+  #  git:
+  #   url: git@github.com:hungryemon/video_player_platform_interface_mux.git
+  #   ref: 9ea9201517e15a40d23914902c1989f15caaa693
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   pigeon: 10.0.0
+  change_app_package_name: ^1.1.0

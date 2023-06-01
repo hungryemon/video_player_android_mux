@@ -8,9 +8,9 @@ import 'dart:ui';
 
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:video_player_android/src/messages.g.dart';
-import 'package:video_player_android/video_player_android.dart';
-import 'package:video_player_platform_interface_mux/video_player_platform_interface.dart';
+import 'package:video_player_android_mux/src/messages.g.dart';
+import 'package:video_player_android_mux/video_player_android_mux.dart';
+import 'package:video_player_platform_interface_mux/video_player_platform_interface_mux.dart';
 
 import 'test_api.g.dart';
 

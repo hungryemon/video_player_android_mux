@@ -11,7 +11,7 @@ import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:video_player_platform_interface_mux/video_player_platform_interface.dart';
+import 'package:video_player_platform_interface_mux/video_player_platform_interface_mux.dart';
 
 VideoPlayerPlatform? _cachedPlatform;
 
@@ -160,7 +160,7 @@ class VideoPlayerValue {
 }
 
 /// A very minimal version of `VideoPlayerController` for running the example
-/// without relying on `video_player`.
+/// without relying on `video_player_mux`.
 class MiniController extends ValueNotifier<VideoPlayerValue> {
   /// Constructs a [MiniController] playing a video from an asset.
   ///
@@ -221,24 +221,52 @@ class MiniController extends ValueNotifier<VideoPlayerValue> {
           sourceType: DataSourceType.asset,
           asset: dataSource,
           package: package,
+          data: {
+        "env_key": "YOUR_ENV_KEY", //MUST PROVIDE
+        "cpd_player_name": "YOUR_PLAYER_NAME",
+        "cpd_viewer_user_id": "YOUR_VIEWER_USER_ID",
+        "cvd_video_title": "YOUR_VIDEO_TITLE",
+        "cvd_video_id": "YOUR_VIDEO_ID",
+        }
         );
         break;
       case DataSourceType.network:
         dataSourceDescription = DataSource(
           sourceType: DataSourceType.network,
           uri: dataSource,
+          data: {
+        "env_key": "YOUR_ENV_KEY", //MUST PROVIDE
+        "cpd_player_name": "YOUR_PLAYER_NAME",
+        "cpd_viewer_user_id": "YOUR_VIEWER_USER_ID",
+        "cvd_video_title": "YOUR_VIDEO_TITLE",
+        "cvd_video_id": "YOUR_VIDEO_ID",
+        }
         );
         break;
       case DataSourceType.file:
         dataSourceDescription = DataSource(
           sourceType: DataSourceType.file,
           uri: dataSource,
+          data: {
+        "env_key": "YOUR_ENV_KEY", //MUST PROVIDE
+        "cpd_player_name": "YOUR_PLAYER_NAME",
+        "cpd_viewer_user_id": "YOUR_VIEWER_USER_ID",
+        "cvd_video_title": "YOUR_VIDEO_TITLE",
+        "cvd_video_id": "YOUR_VIDEO_ID",
+        }
         );
         break;
       case DataSourceType.contentUri:
         dataSourceDescription = DataSource(
           sourceType: DataSourceType.contentUri,
           uri: dataSource,
+          data: {
+        "env_key": "YOUR_ENV_KEY", //MUST PROVIDE
+        "cpd_player_name": "YOUR_PLAYER_NAME",
+        "cpd_viewer_user_id": "YOUR_VIEWER_USER_ID",
+        "cvd_video_title": "YOUR_VIDEO_TITLE",
+        "cvd_video_id": "YOUR_VIDEO_ID",
+        }
         );
         break;
     }

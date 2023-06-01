@@ -1,6 +1,6 @@
-name: video_player_example
-description: Demonstrates how to use the video_player plugin.
-publish_to: none
+name: video_player_mux_example
+description: Demonstrates how to use the video_player_mux plugin.
+
 
 environment:
   sdk: ">=2.18.0 <4.0.0"
@@ -9,17 +9,18 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  video_player_android:
+  video_player_android_mux:
     # When depending on this package from a real application you should use:
     #   video_player_android: ^x.y.z
     # See https://dart.dev/tools/pub/dependencies#version-constraints
     # The example app is bundled with the plugin so we use a path dependency on
     # the parent directory to use the current plugin's version.
     path: ../
-  video_player_platform_interface_mux: 
-   git:
-    url: git@github.com:hungryemon/video_player_platform_interface_mux.git
-    ref: 9ea9201517e15a40d23914902c1989f15caaa693
+  video_player_platform_interface_mux: ^1.0.0
+  # video_player_platform_interface_mux: 
+  #  git:
+  #   url: git@github.com:hungryemon/video_player_platform_interface_mux.git
+  #   ref: 9ea9201517e15a40d23914902c1989f15caaa693
 
 dev_dependencies:
   flutter_driver:
