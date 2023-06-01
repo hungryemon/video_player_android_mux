@@ -2,7 +2,7 @@ name: video_player_android_mux
 description: Android implementation of the video_player_mux plugin.
 repository: https://github.com/hungryemon/video_player_android_mux
 issue_tracker: https://github.com/hungryemon/video_player_android_mux/issues
-version: 1.0.0
+version: 1.0.1
 
 
 environment:
@@ -31,4 +31,3 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   pigeon: 10.0.0
-  change_app_package_name: ^1.1.0
