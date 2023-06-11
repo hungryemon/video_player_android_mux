@@ -240,6 +240,15 @@ class MiniController extends ValueNotifier<VideoPlayerValue> {
         "cpd_viewer_user_id": "YOUR_VIEWER_USER_ID",
         "cvd_video_title": "YOUR_VIDEO_TITLE",
         "cvd_video_id": "YOUR_VIDEO_ID",
+        "cd_1": "YOUR_CUSTOM_DATA_1",
+        "cd_2": "YOUR_CUSTOM_DATA_2",
+        "cd_3": "YOUR_CUSTOM_DATA_3",
+        "cd_4": "YOUR_CUSTOM_DATA_4",
+        "cd_5": "YOUR_CUSTOM_DATA_5",
+        "cd_6": "YOUR_CUSTOM_DATA_6",
+        "cd_7": "YOUR_CUSTOM_DATA_7",
+        "cd_8": "YOUR_CUSTOM_DATA_8",
+        "cd_9": "YOUR_CUSTOM_DATA_9",
         }
         );
         break;
@@ -253,6 +262,15 @@ class MiniController extends ValueNotifier<VideoPlayerValue> {
         "cpd_viewer_user_id": "YOUR_VIEWER_USER_ID",
         "cvd_video_title": "YOUR_VIDEO_TITLE",
         "cvd_video_id": "YOUR_VIDEO_ID",
+        "cd_1": "YOUR_CUSTOM_DATA_1",
+        "cd_2": "YOUR_CUSTOM_DATA_2",
+        "cd_3": "YOUR_CUSTOM_DATA_3",
+        "cd_4": "YOUR_CUSTOM_DATA_4",
+        "cd_5": "YOUR_CUSTOM_DATA_5",
+        "cd_6": "YOUR_CUSTOM_DATA_6",
+        "cd_7": "YOUR_CUSTOM_DATA_7",
+        "cd_8": "YOUR_CUSTOM_DATA_8",
+        "cd_9": "YOUR_CUSTOM_DATA_9",
         }
         );
         break;
@@ -266,6 +284,15 @@ class MiniController extends ValueNotifier<VideoPlayerValue> {
         "cpd_viewer_user_id": "YOUR_VIEWER_USER_ID",
         "cvd_video_title": "YOUR_VIDEO_TITLE",
         "cvd_video_id": "YOUR_VIDEO_ID",
+        "cd_1": "YOUR_CUSTOM_DATA_1",
+        "cd_2": "YOUR_CUSTOM_DATA_2",
+        "cd_3": "YOUR_CUSTOM_DATA_3",
+        "cd_4": "YOUR_CUSTOM_DATA_4",
+        "cd_5": "YOUR_CUSTOM_DATA_5",
+        "cd_6": "YOUR_CUSTOM_DATA_6",
+        "cd_7": "YOUR_CUSTOM_DATA_7",
+        "cd_8": "YOUR_CUSTOM_DATA_8",
+        "cd_9": "YOUR_CUSTOM_DATA_9",
         }
         );
         break;

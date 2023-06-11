@@ -113,10 +113,18 @@ final class VideoPlayer {
     customerVideoData.setVideoTitle(data.get("cvd_video_title"));
     customerVideoData.setVideoId(data.get("cvd_video_id"));
     
-    // CustomData customData = new CustomData();
-    // customData.setCustomData1("YOUR_CUSTOM_STRING_HERE");
+    CustomData customData = new CustomData();
+    customData.setCustomData1(data.get("cd_1"));
+    customData.setCustomData2(data.get("cd_2"));
+    customData.setCustomData3(data.get("cd_3"));
+    customData.setCustomData4(data.get("cd_4"));
+    customData.setCustomData5(data.get("cd_5"));
+    customData.setCustomData6(data.get("cd_6"));
+    customData.setCustomData7(data.get("cd_7"));
+    customData.setCustomData8(data.get("cd_8"));
+    customData.setCustomData9(data.get("cd_9"));
     CustomerData customerData = new CustomerData(customerPlayerData, customerVideoData, null);
-    // customerData.setCustomData(customData);
+    customerData.setCustomData(customData);
     MuxStatsExoPlayer muxStats = new MuxStatsExoPlayer(
             context.getApplicationContext(), data.get("env_key"), exoPlayer, customerData);
     Point size = new Point();

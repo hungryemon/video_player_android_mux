@@ -146,6 +146,7 @@ public class VideoPlayerPlugin implements FlutterPlugin, AndroidVideoPlayerApi {
     } else {
       @SuppressWarnings("unchecked")
       Map<String, String> httpHeaders = arg.getHttpHeaders();
+      System.out.println(arg.getFormatHint());
       player =
           new VideoPlayer(
               flutterState.applicationContext,

@@ -1,8 +1,8 @@
 name: video_player_android_mux
 description: Android implementation of the video_player_mux plugin.
-repository: https://github.com/hungryemon/video_player_android_mux
-issue_tracker: https://github.com/hungryemon/video_player_android_mux/issues
-version: 1.0.1
+repository: https://github.com/hungryemon/video_player_android_mux # Repository Link
+issue_tracker: https://github.com/hungryemon/video_player_android_mux/issues #Issues
+version: 1.0.2
 
 
 environment:
@@ -11,7 +11,7 @@ environment:
 
 flutter:
   plugin:
-    implements: video_player
+    implements: video_player_mux
     platforms:
       android:
         dartPluginClass: AndroidVideoPlayer
@@ -21,13 +21,11 @@ flutter:
 dependencies:
   flutter:
     sdk: flutter
+  #Uses video_player_platform_interface_mux
   video_player_platform_interface_mux: ^1.0.0
-  # video_player_platform_interface_mux: 
-  #  git:
-  #   url: git@github.com:hungryemon/video_player_platform_interface_mux.git
-  #   ref: 9ea9201517e15a40d23914902c1989f15caaa693
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  ## Pigeon is used for native bridging
   pigeon: 10.0.0
